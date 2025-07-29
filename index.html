@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scoreboard</title>
+</head>
+<body>
+    <div id="board">
+        <div id="home">
+            <div class="card">
+                <h1>HOME</h1>
+                <div id="home-score" class="score">0</div>
+                <div class="btn-section">
+                    <button id="home-score-1" onclick="addHomeScore(1)">+1</button>
+                    <button id="home-score-2" onclick="addHomeScore(2)">+2</button>
+                    <button id="home-score-3" onclick="addHomeScore(3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="guest">
+            <div class="card">
+                <h1>GUEST</h1>
+                <div id="guest-score" class="score">0</div>
+                <div class="btn-section">
+                    <button id="guest-score-1" onclick="addGuestScore(1)">+1</button>
+                    <button id="guest-score-2" onclick="addGuestScore(2)">+2</button>
+                    <button id="guest-score-3" onclick="addGuestScore(3)">+3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="start-game-btn" onclick="startNewGame()">Start New Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
